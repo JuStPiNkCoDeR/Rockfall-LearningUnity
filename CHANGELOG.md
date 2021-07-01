@@ -6,5 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Ship forward movement.
+- Smooth camera follow.
 
 [Unreleased]: 
