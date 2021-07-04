@@ -186,6 +186,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 333291241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &448575554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448575555}
+  - component: {fileID: 448575556}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448575555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448575554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7406459, y: 1.1042873, z: -6.8228617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &448575556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448575554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 619f18e63577a4f12b6984732929a544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steering: {fileID: 885138063}
 --- !u!1 &451902595
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +861,7 @@ GameObject:
   - component: {fileID: 2138276736}
   - component: {fileID: 2138276737}
   - component: {fileID: 2138276738}
+  - component: {fileID: 2138276739}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -865,3 +910,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &2138276739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138276735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaaeeb306a1c74f6391a7336e9ba28c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnRate: 6
+  levelDamping: 1
