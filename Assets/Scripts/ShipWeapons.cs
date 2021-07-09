@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,20 @@ public class ShipWeapons : MonoBehaviour
     public Transform[] firePoints;
 
     private int _firePointIndex;
-    
+
+    public void Awake()
+    {
+        InputManager.Instance.SetWeapons(this);
+    }
+
+    public void OnDestroy()
+    {
+        if (Application.isPlaying)
+        {
+            InputManager.Instance.RemoveWeapons(this);
+        }
+    }
+
     public void Fire()
     {
         if (firePoints.Length == 0)
