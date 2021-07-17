@@ -17,8 +17,8 @@ public class ShipSteering : MonoBehaviour
         var steeringInput = InputManager.Instance.steering.delta;
         var rotation = new Vector2();
 
-        rotation.x = steeringInput.x;
-        rotation.y = steeringInput.y;
+        rotation.x = steeringInput.y;
+        rotation.y = steeringInput.x;
         rotation *= turnRate;
         rotation.x = Mathf.Clamp(rotation.x, -Mathf.PI * 0.9f, Mathf.PI * 0.9f);
 
